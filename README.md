@@ -50,4 +50,16 @@ password: data.get("password"),
 history.push("/welcomepage");
 };
 
+# Login Screen
+
 ![Screenshot](loginscreen.JPG)
+
+#### Then fetch user's data using API
+
+creat user cards
+
+# Welcome Screen
+
+![Screenshot](welcomescreen.JPG)
+
+## Final process filter out single users with their email using filter method
