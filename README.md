@@ -27,25 +27,24 @@ first install google and facebook login package
 
 ### npm i react-facebook-login
 
-- create Google and Facebook developer (ID's)
-  Then create some functions like 1. onLoginSuccess 2. onLoginFailure 3.handleSubmit
-  const onLoginSuccess = (event) => {
-  console.log("Login Success:", event.profileObj);
-  history.push("/welcomepage");
-  };
+create Google and Facebook developer (ID's)
+Then create some functions like 1. onLoginSuccess 2. onLoginFailure 3.handleSubmit
+const onLoginSuccess = (event) => {
+console.log("Login Success:", event.profileObj);
+history.push("/welcomepage");
+};
 
-  const onLoginFailure = (event) => {
-  console.log("Login Failed:", event);
-  };
+const onLoginFailure = (event) => {
+console.log("Login Failed:", event);
+};
 
-  const handleSubmit = (event) => {
-  event.preventDefault();
-  const data = new FormData(event.currentTarget);
-  console.log({
-  email: data.get("email"),
-  password: data.get("password"),
-  });
-  history.push("/welcomepage");
-  };
-
--
+const handleSubmit = (event) => {
+event.preventDefault();
+const data = new FormData(event.currentTarget);
+console.log({
+email: data.get("email"),
+password: data.get("password"),
+});
+history.push("/welcomepage");
+};
+![This is an image](../login screen.JPG)
