@@ -11,6 +11,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { GoogleLogin } from "react-google-login";
 import FacebookLogin from "react-facebook-login";
 import { useHistory } from "react-router-dom";
+import LoginIcon from "@mui/icons-material/Login";
 
 const theme = createTheme();
 
@@ -50,8 +51,8 @@ function Login() {
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-            <LockOutlinedIcon />
+          <Avatar sx={{ m: 1, bgcolor: "primary.main" }}>
+            <LoginIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
             Login
@@ -98,7 +99,7 @@ function Login() {
               onSuccess={onLoginSuccess}
               onFailure={onLoginFailure}
               cookiePolicy={"single_host_origin"}
-              isSignedIn={true}
+              // isSignedIn={true}
             />
             <FacebookLogin
               appId="1071354816969212"
