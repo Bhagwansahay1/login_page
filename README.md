@@ -50,4 +50,4 @@ password: data.get("password"),
 history.push("/welcomepage");
 };
 
-![Screenshot](login screen.JPG)
+![Screenshot](loginscreen.JPG)
