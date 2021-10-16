@@ -12,6 +12,8 @@ import { GoogleLogin } from "react-google-login";
 import FacebookLogin from "react-facebook-login";
 import { useHistory } from "react-router-dom";
 import LoginIcon from "@mui/icons-material/Login";
+import { Link } from "react-router-dom";
+import Grid from "@mui/material/Grid";
 
 const theme = createTheme();
 
@@ -109,6 +111,11 @@ function Login() {
               width="100%"
               // size="large"
             />
+            <Grid item>
+              <Link to="/signup" variant="body2">
+                {"Don't have an account? Sign Up"}
+              </Link>
+            </Grid>
           </Box>
         </Box>
       </Container>
